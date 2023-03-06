@@ -1,0 +1,50 @@
+{
+  'dictionary':
+  {
+    'ajani':
+    {
+      'phyrexian':ajaniPhy,
+      'IPA':'ajani'
+      'translation':'Ajani',
+      'root':false
+      'composition':false
+      'examples':['list of examples'],
+      'notes':['Proper foreign name']
+    },
+    'avaricta':
+    {
+      'phyrexian':avarictaPhy,
+      'IPA':'avarikta'
+      'translation':'Avaricta',
+      'root':false
+      'composition':false
+      'examples':['list of examples'],
+      'notes':['Proper foreign name']
+    },
+    'elesh norn':
+    {
+      'phyrexian':eleshPhy,
+      'IPA':'ʔelʃ norn'
+      'translation':'Elesh Norn',
+      'root':false
+      'composition':false
+      'examples':['list of examples'],
+      'notes':['Proper native name']
+    },
+    'gitaxias':
+    {
+      'phyrexian':gitaxiasPhy,
+      'IPA':'eleʃ norn'
+      'translation':'Elesh Norn',
+      'root':false
+      'composition':false
+      'examples':['list of examples'],
+      'notes':['Proper native name']
+    },
+
+  },
+  'samples':
+  {
+  }
+}
+
