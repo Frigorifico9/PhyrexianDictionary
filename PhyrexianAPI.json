@@ -1,0 +1,171 @@
+{
+  "dictionary": {
+    "ajani": {
+      "phyrexian": "ajaniPhy",
+      "IPA": "ajani",
+      "translation": "Ajani",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": false,
+      "notes": false
+    },
+    "avaricta": {
+      "phyrexian": "avarictaPhy",
+      "IPA": "avarikta",
+      "translation": "Avaricta",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    },
+    "elesh norn": {
+      "phyrexian": "eleshPhy",
+      "IPA": "ʔelʃ norn",
+      "translation": "Elesh Norn",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    },
+    "jin-gitaxias": {
+      "phyrexian": "jin-gitaxiasPhy",
+      "IPA": "jiʔngytx",
+      "translation": "Jin-Gitaxias",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    },
+    "jace": {
+      "phyrexian": "jacePhy",
+      "IPA": "jes",
+      "translation": "Jace",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": false,
+      "notes": false
+    },
+    "k'rrik": {
+      "phyrexian": "k'rrikPhy,""IPA": "kʰərrx",
+      "translation": "K'rrik",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    },
+    "lukka": {
+      "phyrexian": "lukkaPhy",
+      "IPA": "lukɑ",
+      "translation": "Lukka",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": false,
+      "notes": false
+    },
+    "nahiri": {
+      "phyrexian": "nahiriPhy",
+      "IPA": "nahiri",
+      "translation": "Nahiri",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": false,
+      "notes": false
+    },
+    "nissa": {
+      "phyrexian": "nissaPhy",
+      "IPA": "nisa",
+      "translation": "Nissa",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": false,
+      "notes": false
+    },
+    "phyrexia": {
+      "phyrexian": "phyrexiaPhy",
+      "IPA": "pʰyrxkeθəgd",
+      "translation": "Phyrexia",
+      "root": false,
+      "composition": [
+        "phyrexiaRoot",
+        "landRoot"
+      ],
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    },
+    "sheoldred": {
+      "phyrexian": "sheoldredPhy",
+      "IPA": "ʃøldrd",
+      "translation": "Sheoldred",
+      "root": false,
+      "composition": false,
+      "examples": [
+        "list of examples"
+      ],
+      "class": [
+        "Proper name"
+      ],
+      "native": true,
+      "notes": false
+    }
+  }
+}
