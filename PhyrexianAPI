@@ -132,6 +132,18 @@
       "class":["Proper name"],
       "native":true,
       "notes":false
+    },
+        "yawgmoth":
+    {
+      "phyrexian":yawgmothPhy,
+      "IPA":"jɒʔgmoʔθ",
+      "translation":"Yawgmoth",
+      "root":false,
+      "composition":false,
+      "examples":["Phyrexian Scriptures", "Yawgmoth's Testament"],
+      "class":["Proper name"],
+      "native":true,
+      "notes":false
     }
   }
 }
