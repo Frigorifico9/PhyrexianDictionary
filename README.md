@@ -1,6 +1,21 @@
 # PhyrexianDictionary
 Phyrexian Dictionary
 
+Proposed future tasks:
+- set up django framework
+- create database in postgresql or sqlite
+- etl existing json files into db
+- build the....entire front-end
+- link cards to mtg api
+
+
+
+
+
+
+
+<hr>
+
 Goal:
 
 To craeate a website where people can look up all known information about the Phyrexian language
@@ -18,3 +33,4 @@ Steps:
 3.- Write code to render website from API
 
 4.- Host it on phyrexiandictionary.com (which I already own)
+
