@@ -4,8 +4,9 @@ Phyrexian Dictionary
 Proposed future tasks:
 
 - [x] set up django framework
-- [ ] reorganize files
+- [x] reorganize files
 - [x] create database in postgresql or sqlite
+- [ ] create search bar
 - [ ] etl existing json files into db
 - [ ] build the....entire front-end
 - [ ] link cards to mtg api
