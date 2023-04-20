@@ -2,4 +2,4 @@
 pyvenv.cfg
 /venv
 PhyrexianDictionary.code-workspace
-**/__pycache__
+**/__pycache__/
