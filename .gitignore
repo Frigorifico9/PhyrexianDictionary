@@ -1,1 +1,5 @@
-/env
+.env
+pyvenv.cfg
+/venv
+PhyrexianDictionary.code-workspace
+**/__pycache__/
