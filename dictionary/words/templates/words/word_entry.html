@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>My test page</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+
+            .row {
+            display: flex;
+            }
+
+            .column {
+                flex: 50%;
+                margin: 0px 100px;
+            }
+
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+            hr.solid {
+                border-top: 3px solid black;
+            }
+            .search-bar{
+                border-width:1px;
+                border-style: solid;
+                border-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="/words/" class="w3-bar-item w3-button w3-theme-l1">Phyrexian Dictionary</a>
+            <a href="/words/about/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+            </div>
+        </div>
+        
+        <div style="margin:100px 100px 0px;">
+            <h1 class="w3-text-teal">{{phyrexian_word.phyrexian}}</h1>
+            <hr class ="solid">
+            <h6 class="w3-text-black">Phonetic: {{phyrexian_word.phonetic}}</h6>
+            <h6 class="w3-text-black">Translation: {{phyrexian_word.translation}}</h6>
+            <hr class ="solid">
+        </div>
+        <div class="row">
+            <div class="column">
+                  <h3 class="w3-text-black"> Roots </h3>
+                  <ul>
+                    {%if not phyrexian_word.parent_relationships.all %}
+                        <p class="w3-text-grey"> No roots found </p>
+                    {%endif%}
+                    {% for root in phyrexian_word.parent_relationships.all %}
+                        <li><a href="/../words/{{root.child.phyrexian}}/">{{root.child}}</a></li>
+                    {% endfor %}
+                  </ul>
+                  <h3 class="w3-text-black"> Conjugations </h3>
+                  <ul>
+                    {%if not phyrexian_word.child_relationships.all %}
+                        <p class="w3-text-grey"> No conjugations found </p>
+                    {%endif%}
+                    {% for root in phyrexian_word.child_relationships.all %}
+                        <li><a href="/../words/{{root.parent.phyrexian}}/">{{root.parent}}</a></li>
+                    {% endfor %}
+                  </ul>
+            </div>
+            <div class="column">
+                <h3 class="w3-text-black"> Examples </h3>
+                <ul>
+                    {%if not phyrexian_word.bridges.all %}
+                        <p class="w3-text-grey"> No examples found </p>
+                    {%endif%}
+                    {% for root in phyrexian_word.bridges.all %}
+                        <li>{{root.example_text.card}}
+                            <ul>
+                                <li>{{root.example_text.phyrexian_text}}</li>
+                                <li>{{root.example_text.english_text}}</li>
+                            </ul>
+                        </li>                       
+                    {% endfor %}
+                  </ul>
+            </div>
+        </div>
+  </body>
+</html>
