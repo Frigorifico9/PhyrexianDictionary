@@ -7,7 +7,7 @@ Proposed future tasks:
 - [x] reorganize files
 - [x] create database in postgresql or sqlite
 - [ ] create search bar
-- [ ] etl existing json files into db
+- [x] etl existing json files into db
 - [ ] build the....entire front-end
 - [ ] link cards to mtg api
 
