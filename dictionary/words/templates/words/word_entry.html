@@ -7,8 +7,15 @@
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'words/phyrexian.css' %}">
+
         <title>My test page</title>
         <style>
+            @font-face {
+                font-family: phyrexian;
+                src: local('Basilica.otf'), url('../../static/words/fonts/Basilica.otf') format("truetype");
+            }
             * {
             box-sizing: border-box;
             }
@@ -22,7 +29,6 @@
                 margin: 0px 100px;
             }
 
-            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             hr.solid {
                 border-top: 3px solid black;
             }
@@ -42,15 +48,18 @@
             <a href="/words/about/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
             </div>
         </div>
-        
-        <div style="margin:100px 100px 0px;">
-            <h1 class="w3-text-teal">{{phyrexian_word.phyrexian}}</h1>
-            <hr class ="solid">
-            <h6 class="w3-text-black">Official Transliteration: {{phyrexian_word.official}}</h6>
-            <h6 class="w3-text-black">Latin Transliteration: {{phyrexian_word.latin}}</h6>
-            <h6 class="w3-text-black">IPA: {{phyrexian_word.ipa}}</h6>
-            <h6 class="w3-text-black">Definition: {{phyrexian_word.definition}}</h6>
-            <hr class ="solid">
+        <div style="padding: 100px 100px 50px">
+            <div style="float:left">
+                <h1 class="ultimate phyrexian">{{phyrexian_word.official}}</h1>
+            </div>
+            <div style="padding-left: 100px">
+                <hr class ="solid">
+                <h6 class="w3-text-black">Official Transliteration: {{phyrexian_word.official}}</h6>
+                <h6 class="w3-text-black">Latin Transliteration: {{phyrexian_word.latin}}</h6>
+                <h6 class="w3-text-black">IPA: {{phyrexian_word.ipa}}</h6>
+                <h6 class="w3-text-black">Definition: {{phyrexian_word.definition}}</h6>
+                <hr class ="solid">
+            </div>
         </div>
         <div class="row">
             <div class="column">

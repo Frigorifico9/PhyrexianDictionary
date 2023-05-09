@@ -1,0 +1,52 @@
+@font-face {
+  font-family: phyrexian;
+  src: local('Basilica.otf'), url('../static/words/fonts/Basilica.otf') format("truetype");
+}
+
+@font-face {
+  font-family: phyrexian-compleat;
+  src: local('PhyrexianCompleat.ttf'), url('/static/words/fonts/PhyrexianCompleat.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: beleren;
+  src: url(Beleren2016-Bold.woff);
+}
+
+.beleren {
+  font-family: beleren;
+}
+
+.phyrexian {
+  font-family: phyrexian;
+}
+
+.horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.vertical {
+  writing-mode: vertical-lr;
+}
+
+.keyboard-frame {
+  background-color: lightgray;
+}
+
+.key {
+  cursor: default;
+  user-select: none;
+}
+
+.key-transcription {
+  display: contents;
+}
+
+.key-notation {
+  display: none;
+}
+
+.ultimate {
+  writing-mode: vertical-lr;
+  font-size: 2em;
+}
