@@ -6,8 +6,14 @@ Proposed future tasks:
 - [x] set up django framework
 - [x] reorganize files
 - [x] create database in postgresql or sqlite
+- [x] etl existing json files into db
+- [ ] etl notes to new words
+- [ ] etl roots/parents to words
+- [ ] decide how to integrate sources vs cards
+- [ ] etl sources to new words
 - [ ] create search bar
-- [ ] etl existing json files into db
+
+Far future:
 - [ ] build the....entire front-end
 - [ ] link cards to mtg api
 

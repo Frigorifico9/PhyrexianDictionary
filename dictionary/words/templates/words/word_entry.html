@@ -46,8 +46,10 @@
         <div style="margin:100px 100px 0px;">
             <h1 class="w3-text-teal">{{phyrexian_word.phyrexian}}</h1>
             <hr class ="solid">
-            <h6 class="w3-text-black">Phonetic: {{phyrexian_word.phonetic}}</h6>
-            <h6 class="w3-text-black">Translation: {{phyrexian_word.translation}}</h6>
+            <h6 class="w3-text-black">Official Transliteration: {{phyrexian_word.official}}</h6>
+            <h6 class="w3-text-black">Latin Transliteration: {{phyrexian_word.latin}}</h6>
+            <h6 class="w3-text-black">IPA: {{phyrexian_word.ipa}}</h6>
+            <h6 class="w3-text-black">Definition: {{phyrexian_word.definition}}</h6>
             <hr class ="solid">
         </div>
         <div class="row">
@@ -58,7 +60,7 @@
                         <p class="w3-text-grey"> No roots found </p>
                     {%endif%}
                     {% for root in phyrexian_word.parent_relationships.all %}
-                        <li><a href="/../words/{{root.child.phyrexian}}/">{{root.child}}</a></li>
+                        <li><a href="/../words/{{root.child.official}}/">{{root.child}}</a></li>
                     {% endfor %}
                   </ul>
                   <h3 class="w3-text-black"> Conjugations </h3>
@@ -67,7 +69,7 @@
                         <p class="w3-text-grey"> No conjugations found </p>
                     {%endif%}
                     {% for root in phyrexian_word.child_relationships.all %}
-                        <li><a href="/../words/{{root.parent.phyrexian}}/">{{root.parent}}</a></li>
+                        <li><a href="/../words/{{root.parent.official}}/">{{root.parent}}</a></li>
                     {% endfor %}
                   </ul>
             </div>

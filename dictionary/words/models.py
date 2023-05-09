@@ -2,11 +2,13 @@ from django.db import models
 
 class PhyrexianWord(models.Model):
     phyrexian = models.CharField(max_length=255)
-    phonetic = models.CharField(max_length=255)
-    translation = models.CharField(max_length=255)
+    official = models.CharField(max_length=255)
+    latin = models.CharField(max_length=255)
+    ipa = models.CharField(max_length=255)
+    definition = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.phyrexian + '(' + self.translation + ')'
+        return self.official + '(' + self.definition + ')'
 
 class PhyrexianWordNotes(models.Model):
     phyrexian_word = models.ForeignKey(PhyrexianWord, on_delete=models.CASCADE, related_name='notes')

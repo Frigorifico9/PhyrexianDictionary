@@ -5,5 +5,5 @@ from . import views
 urlpatterns = [
     path("", views.index, name="index"),
     path("about/", views.about, name="about"),
-    path("<str:phyrexian_word_str>/", views.word_entry, name="word_entry")
+    path("<str:official_word_str>/", views.word_entry, name="word_entry")
 ]
