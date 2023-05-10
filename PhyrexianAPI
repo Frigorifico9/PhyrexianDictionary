@@ -132,6 +132,54 @@
       "class":["Proper name"],
       "native":true,
       "notes":false
+    },
+    "urabrask":
+    {
+      "phyrexian":urabraskPhy,
+      "IPA":"ʔurʌbrask",
+      "translation":"Urabrask",
+      "root":false,
+      "composition":false,
+      "examples":["list of examples"],
+      "class":["Proper name"],
+      "native":true,
+      "notes":false
+    },
+    "vorinclex":
+    {
+      "phyrexian":vorinclexPhy,
+      "IPA":"vɔrɪnklɛks",
+      "translation":"Vorinclex",
+      "root":false,
+      "composition":false,
+      "examples":["list of examples"],
+      "class":["Proper name"],
+      "native":true,
+      "notes":false
+    },
+    "vraska":
+    {
+      "phyrexian":vraskaPhy,
+      "IPA":"vraskɐ",
+      "translation":"Vraska",
+      "root":false,
+      "composition":false,
+      "examples":["list of examples"],
+      "class":["Proper name"],
+      "native":false,
+      "notes":false
+    },
+    "tamiyo":
+    {
+      "phyrexian":tamiyoPhy,
+      "IPA":"tamijo",
+      "translation":"Tamiyo",
+      "root":false,
+      "composition":false,
+      "examples":["list of examples"],
+      "class":["Proper name"],
+      "native":false,
+      "notes":false
     }
   }
 }
